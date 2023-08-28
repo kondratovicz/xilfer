@@ -6,8 +6,6 @@ const RentedMovies = ({
   handleRentedMovies,
   setMovieId,
 }) => {
-  console.table(users);
-  console.log(users[currentUserIndex].rentedMovies);
   return users[currentUserIndex].rentedMovies.map((e) => (
     <Movie
       key={e.id}

@@ -32,7 +32,6 @@ const Catalog = ({
     } else {
       alert("Unrent some movie, you are low on money");
     }
-    console.log("before activate modal");
     setModalState(true);
     getGif(title);
   };
@@ -77,10 +76,6 @@ const Catalog = ({
   };
   
   const hasRentedMovies = !isNaN(currentUserIndex) && users[currentUserIndex]?.rentedMovies?.length > 0
-
-  console.log("all",currentUserIndex && users[currentUserIndex]?.rentedMovies?.length > 0)
-  console.log("curr index",currentUserIndex)
-  console.log("array",users)
 
   return (
     <>

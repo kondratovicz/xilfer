@@ -15,23 +15,13 @@ function App() {
   let [pokemonData, setPokemonData] = useState([]);
   let [modalState, setModalState] = useState(false);
 
-  console.log(users)
-  console.log(currentUserIndex)
-
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
       .then((response) => response.json())
       .then((response) => setMoviesData(response.results))
       .catch((err) => console.error(err));
   }, []);
-  /*
-  useEffect(()=>{
-      fetch(`http://api.giphy.com/v1/gifs/search?q=pokemon&api_key=aS68Tr0I82xdvlr9KS7Z235P6hlCuE0i&limit=5`)
-      .then(response => response.json())
-      .then(response => setPokemonData(response.data))
-      .catch(err => console.error(err));
-    }, [])
-*/
+
   const getGif = (searchStr) => {
     console.log(searchStr);
     const api_key = "aS68Tr0I82xdvlr9KS7Z235P6hlCuE0i";
