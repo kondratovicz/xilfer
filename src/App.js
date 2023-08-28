@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/main/NavBar";
-import { USERS_DATA, API_KEY } from "./config/data/constants";
+import { USERS_DATA, API_KEY, POKEMON_KEY} from "./config/data/constants";
 import Landing from "./components/main/Landing";
 import Catalog from "./components/main/Catalog";
 import MovieDetails from "./components/helpers/MovieDetails";
@@ -24,8 +24,7 @@ function App() {
 
   const getGif = (searchStr) => {
     console.log(searchStr);
-    const api_key = "aS68Tr0I82xdvlr9KS7Z235P6hlCuE0i";
-    const url = `http://api.giphy.com/v1/gifs/search?q=${searchStr}&api_key=${api_key}&limit=1`;
+    const url = `http://api.giphy.com/v1/gifs/search?q=${searchStr}&api_key=${POKEMON_KEY}&limit=1`;
     fetch(url)
       .then((response) => response.json())
       .then((response) => setPokemonData(response.data[0].images.downsized.url))
