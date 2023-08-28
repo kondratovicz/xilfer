@@ -1,0 +1,19 @@
+.detailImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.detailOverview {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 50px;
+}
+
+.detailHeader {
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.listElement {
+    background-color: #5B9A8B;
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+    color: black;
+    border-radius: 15px;
+    border: 0px;
+    text-decoration: none;
+    width: 10%;
+}

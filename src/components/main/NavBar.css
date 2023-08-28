@@ -1,0 +1,15 @@
+#navbar {
+    display: flex;
+    gap: 100px;
+}
+
+p {
+    margin-left: auto;
+    padding-right: 25px;
+    font-family: sans-serif;
+}
+
+.reflix {
+    color: cyan;
+    font-weight: 900;
+}
